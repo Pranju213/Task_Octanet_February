@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+ }
+ .logo img{
+   height:8rem;
+ }
+ .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:90%;
+    height:12vh;
+    position:fixed;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+ }
+ .navlist{
+    display:flex;
+    gap:2.5rem;
+ }
+ .navlist li{
+    list-style:none;
+ }
+ .navlist a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+    letter-spacing: .08rem;
+}
+.hero {
+    display:flex;
+}
+.hero .left {
+    background-color: #2c1e1e;
+    padding-left:3rem;
+}
+.hero .right {
+    background-color: #7c573c;
+    justify-content: center;
+}
+.hero .hero_split {
+    width: 50%;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+}
+.navlist .slider{
+background-color: rgba(255, 255, 255, 0.349);
+width:6rem;
+height:5rem;
+position:absolute;
+top:0;
+right:430px;
+border-top: .3rem solid #2c1e1e;
+border-radius:0 0 2rem 2rem;
+backdrop-filter:blur(.5rem);
+z-index:-1;
+transition:.5s ease-in-out;
+}
+.navlist li:nth-child(2):hover ~ .slider{
+    right:330px;
+}
+.navlist li:nth-child(3):hover ~ .slider{
+    right:225px;
+}
+.navlist li:nth-child(4):hover ~ .slider{
+    right:105px;
+}
+.navlist li:nth-child(5):hover ~ .slider{
+    right:-10px;
+}
+.left .content{
+    color:white;
+}
+.content h1{
+    font-size: 5rem;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke:.04rem white;
+    letter-spacing: .2rem;
+    font-family: 'Days One', sans-serif;
+}
+.content p{
+    color:rgba(255, 255, 255, 0.377);
+    font-size: 1.3rem;
+    width: 85%;
+    margin:1.3rem 0;
+    line-height:1.8rem;
+}
+.content button{
+    background:radial-gradient(at top left,#5a4740,#2c1e1e);
+    padding:1rem 3rem;
+    border:.2rem solid rgba(255, 255, 255, 0.288);
+    font-size:1.3rem;
+    color:white;
+    border-radius:4rem;
+    letter-spacing: .1rem;
+}
